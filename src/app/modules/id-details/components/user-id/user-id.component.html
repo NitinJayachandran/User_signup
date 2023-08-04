@@ -1,0 +1,24 @@
+<!--ul>
+  <li *ngFor="let user of users | async">
+    ID: {{ user.userId }}, 
+    Name: {{ user.name }}
+  </li>
+</ul-->
+
+
+<h2>User List</h2>
+<div class = "user-details">
+<div>
+
+    <div *ngFor="let user of users | async" class="user-item">     
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Age:</strong> {{ user.age }}</p>
+        <p><strong>gender:</strong> {{ user.gender }}</p>
+        <p><strong>email:</strong> {{ user.email }}</p>
+        <!--button (click)="goToUserDetails(user.userId)">Details</button-->
+
+    </div>
+</div>
+<!--button (click)="goToUserDetails(user.userId)">Details</button-->
+
+</div>
